@@ -1,0 +1,13 @@
+* {
+    font-family: Arial;
+}
+
+body {
+    display: block;
+}
+
+input {
+    text-align: center;
+    display: block;
+    margin: 20px;
+}
