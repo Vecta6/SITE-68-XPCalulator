@@ -10,19 +10,31 @@
 </head>
 
 <body>
-    <center>
-        <h5>Entre ton nombre D'XP</h5>
-        <input type="number" id="MyXP" placeholder="ex: 15560">
 
-        <h5>Tu voudrait atteindre combien ?</h5>
-        <input type="text" id="Goal" list="l1" placeholder="ex: Commandant">
+    <div id="head">
+        <center>
+            <ul>
+                <li><a href="https://sites.google.com/view/site-68-fr/accueil/">Site-68</a></li>
+                <li>|</li>
+                <li><a href="https://discord.gg/9e6u7zY7Zx">Discord du Site-68</a></li>
+            </ul>
+        </center>
+    </div>
 
-        <input type="button" id="CalculButton" value="Calculer..." onclick="prossess()">
+    <div id="main">
+        <center>
+            <h5>Entre ton nombre D'XP</h5>
+            <input type="number" id="MyXP" placeholder="ex: 15560">
 
-        <p id="result"></p>
-    </center>
+            <h5>Tu voudrait atteindre combien ?</h5>
+            <input type="text" id="Goal" list="l1" placeholder="ex: Commandant">
 
-    <datalist id="l1">
+            <input type="button" id="CalculButton" value="Calculer..." onclick="prossess()">
+
+            <p id="result"></p>
+        </center>
+
+        <datalist id="l1">
         <option value="850">Cuisinier</option>
 
         <option value="500">Consièrge</option>
@@ -56,7 +68,7 @@
         <option value="210000">Main Du Serpent</option>
 
     </datalist>
-
+    </div>
 </body>
 
 <script src="js/js.js"></script>
