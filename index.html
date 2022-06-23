@@ -10,72 +10,77 @@
 </head>
 
 <body>
+    <div id="root">
+        <div id="head">
+            <center>
+                <ul>
+                    <li><a href="https://sites.google.com/view/site-68-fr/accueil/">Site-68</a></li>
+                    <li>|</li>
+                    <li><a href="https://discord.gg/9e6u7zY7Zx">Discord du Site-68</a></li>
+                </ul>
+            </center>
+        </div>
 
-    <div id="head">
+        <div id="main">
+            <center>
+                <form name="Form">
+                    <h5>Entre ton nombre D'XP</h5>
+                    <input type="number" id="MyXP" placeholder="ex: 15560" required />
+
+                    <h5>Tu voudrait atteindre combien ?</h5>
+                    <input type="text" id="Goal" list="l1" placeholder="ex: Commandant" required pattern="[0-9]+">
+                </form>
+
+                <input type="button" id="CalculButton" value="Calculer..." onclick="prossess()">
+
+                <p id="result"></p>
+            </center>
+
+            <datalist id="l1">
+                <option value="850">Cuisinier</option>
+
+                <option value="500">Consièrge</option>
+                <option value="35000">Technicien</option>
+                <option value="52000">Chef DI&ST</option>
+
+                <option value="1500">Cadet</option>
+                <option value="6000">Garde</option>
+                <option value="12000">Garde Avancé</option>
+                <option value="16500">Chef Garde</option>
+                <option value="17000">Lieutenant</option>
+                <option value="20512">Commandant</option>
+                <option value="42500">A.I.T</option>
+                <option value="52200">A.P.T</option>
+                <option value="79250">Colonel</option>
+
+                <option value="3000">Recrue Scientifique</option>
+                <option value="25000">Expert Scientifique</option>
+                <option value="45900">Gérant Scientifique</option>
+
+                <option value="2500">Infiermier</option>
+                <option value="15347">Médecin</option>
+                <option value="26000">Médecin en combat</option>
+                <option value="45000">Gérant Médical</option>
+
+                <option value="51000">Administarteur Du Site</option>
+                <option value="61500">Superviseur En Chef</option>
+                <option value="85000">Co-Directeur Du Site</option>
+                <option value="110500">Directeur Du Site</option>
+
+                <option value="210000">Main Du Serpent</option>
+
+            </datalist>
+        </div>
         <center>
-            <ul>
-                <li><a href="https://sites.google.com/view/site-68-fr/accueil/">Site-68</a></li>
-                <li>|</li>
-                <li><a href="https://discord.gg/9e6u7zY7Zx">Discord du Site-68</a></li>
-            </ul>
+            <p id="SITE68">
+                ░██████╗██╗████████╗███████╗  ░░░░░░  ░█████╗░░█████╗░ <br> ██╔════╝██║╚══██╔══╝██╔════╝  ░░░░░░  ██╔═══╝░██╔══██╗ <br> ╚█████╗░██║░░░██║░░░█████╗░░  █████╗  ██████╗░╚█████╔╝ <br> ░╚═══██╗██║░░░██║░░░██╔══╝░░  ╚════╝  ██╔══██╗██╔══██╗
+                <br> ██████╔╝██║░░░██║░░░███████╗  ░░░░░░  ╚█████╔╝╚█████╔╝
+                <br> ╚═════╝░╚═╝░░░╚═╝░░░╚══════╝  ░░░░░░  ░╚════╝░░╚════╝░
+            </p>
         </center>
+        <p>Calculateur par Vecta_#3015</p>
+
     </div>
-
-    <div id="main">
-        <center>
-            <h5>Entre ton nombre D'XP</h5>
-            <input type="number" id="MyXP" placeholder="ex: 15560">
-
-            <h5>Tu voudrait atteindre combien ?</h5>
-            <input type="text" id="Goal" list="l1" placeholder="ex: Commandant">
-
-            <input type="button" id="CalculButton" value="Calculer..." onclick="prossess()">
-
-            <p id="result"></p>
-        </center>
-
-        <datalist id="l1">
-        <option value="850">Cuisinier</option>
-
-        <option value="500">Consièrge</option>
-        <option value="35000">Technicien</option>
-        <option value="52000">Chef DI&ST</option>
-
-        <option value="1500">Cadet</option>
-        <option value="6000">Garde</option>
-        <option value="12000">Garde Avancé</option>
-        <option value="16500">Chef Garde</option>
-        <option value="17000">Lieutenant</option>
-        <option value="20512">Commandant</option>
-        <option value="42500">A.I.T</option>
-        <option value="52200">A.P.T</option>
-        <option value="79250">Colonel</option>
-
-        <option value="3000">Recrue Scientifique</option>
-        <option value="25000">Expert Scientifique</option>
-        <option value="45900">Gérant Scientifique</option>
-
-        <option value="2500">Infiermier</option>
-        <option value="15347">Médecin</option>
-        <option value="26000">Médecin en combat</option>
-        <option value="45000">Gérant Médical</option>
-
-        <option value="51000">Administarteur Du Site</option>
-        <option value="61500">Superviseur En Chef</option>
-        <option value="85000">Co-Directeur Du Site</option>
-        <option value="110500">Directeur Du Site</option>
-
-        <option value="210000">Main Du Serpent</option>
-
-    </datalist>
-    </div>
-    <center>
-        <p id="SITE68">
-            ░██████╗██╗████████╗███████╗  ░░░░░░  ░█████╗░░█████╗░ <br> ██╔════╝██║╚══██╔══╝██╔════╝  ░░░░░░  ██╔═══╝░██╔══██╗ <br> ╚█████╗░██║░░░██║░░░█████╗░░  █████╗  ██████╗░╚█████╔╝ <br> ░╚═══██╗██║░░░██║░░░██╔══╝░░  ╚════╝  ██╔══██╗██╔══██╗ <br>            ██████╔╝██║░░░██║░░░███████╗  ░░░░░░  ╚█████╔╝╚█████╔╝
-            <br> ╚═════╝░╚═╝░░░╚═╝░░░╚══════╝  ░░░░░░  ░╚════╝░░╚════╝░
-        </p>
-    </center>
-    <p>Calculateur par <em>Vecta_#3015</em></p>
 </body>
 
 <script src="js/js.js"></script>
