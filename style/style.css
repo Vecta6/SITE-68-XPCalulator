@@ -12,6 +12,26 @@ input {
     margin: 20px;
 }
 
+#MyXP:invalid {
+    border: 1px red solid;
+    border-radius: 5px;
+}
+
+#MyXP:valid {
+    border: 1px green solid;
+    border-radius: 5px;
+}
+
+#Goal:invalid {
+    border: 1px red solid;
+    border-radius: 5px;
+}
+
+#Goal:valid {
+    border: 1px green solid;
+    border-radius: 5px;
+}
+
 #head {
     border-bottom: 2px solid rgb(33, 66, 108);
 }
@@ -43,16 +63,23 @@ a {
     transition-duration: 100ms;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 a:hover {
     color: brown;
+    padding-bottom: 2px;
+    border-bottom: 2px solid brown;
 }
 
 #SITE68 {
     margin-top: 500px;
 }
 
-em {
+.emunderline {
     text-decoration: underline;
+}
+
+.emred {
+    color: red;
 }
