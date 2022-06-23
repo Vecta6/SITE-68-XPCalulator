@@ -7,5 +7,5 @@ function prossess() {
     valuesplit = String(value).split(".");
     valuehour = Number(valuesplit[0])
     valuemin = Number("0." + valuesplit[1]) * 60;
-    document.getElementById("result").innerHTML = "Il vous reste encore <em>" + valuehour + "h" + valuemin + "</em> ⩲ 5min de jeu pour atteidre votre but";
+    document.getElementById("result").innerHTML = "Il te reste encore <em>" + valuehour + "h" + valuemin + "</em> ⩲ 5min de jeu pour atteidre votre but";
 }
