@@ -1,15 +1,69 @@
 * {
     font-family: Arial;
+    margin: auto;
 }
 
 body {
     display: block;
 }
 
+#root {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#root img {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -100;
+}
+
+#root::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -99;
+    background-color: rgba(255, 255, 255, 0.123);
+}
+
+#main1 {
+    background-color: rgb(240, 248, 255);
+    width: 50%;
+    padding: 10px;
+    height: 100%;
+}
+
 input {
     text-align: center;
     display: block;
     margin: 20px;
+}
+
+#CalculButton {
+    border-radius: 3px;
+    width: 100px;
+    height: 25px;
+    border: none;
+    background-color: rgba(33, 66, 108, 0.318);
+    transition-duration: 200ms;
+}
+
+#CalculButton:hover {
+    background-color: rgb(240, 248, 255);
+    border-radius: 0;
+    border-top: 2px solid rgba(33, 66, 108);
+    border-bottom: 2px solid rgba(33, 66, 108);
+}
+
+#CalculButton:active {
+    transform: translate(0px, 2px);
 }
 
 #MyXP:invalid {
@@ -34,6 +88,7 @@ input {
 
 #head {
     border-bottom: 2px solid rgb(33, 66, 108);
+    margin: 10px;
 }
 
 #main {
@@ -50,6 +105,10 @@ input {
     to {
         margin-top: 0%;
     }
+}
+
+ul {
+    margin: 10px;
 }
 
 li {
@@ -73,7 +132,7 @@ a:hover {
 }
 
 #SITE68 {
-    margin-top: 500px;
+    margin-top: 18%;
 }
 
 .emunderline {
@@ -87,4 +146,6 @@ a:hover {
 .seperate {
     border-bottom: 2px rgb(33, 66, 108) solid;
     padding-top: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
