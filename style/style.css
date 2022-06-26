@@ -11,11 +11,10 @@ body {
     position: relative;
     height: 100vh;
     width: 100%;
-    overflow: hidden;
 }
 
 #root img {
-    position: absolute;
+    position: fixed;
     min-width: 100%;
     min-height: 100%;
     top: 50%;
@@ -25,7 +24,7 @@ body {
 }
 
 #root::before {
-    position: absolute;
+    position: fixed;
     content: "";
     height: 100%;
     width: 100%;
@@ -37,7 +36,6 @@ body {
     background-color: rgb(240, 248, 255);
     width: 50%;
     padding: 10px;
-    height: 100%;
 }
 
 input {
@@ -132,7 +130,8 @@ a:hover {
 }
 
 #SITE68 {
-    margin-top: 18%;
+    margin-top: 500px;
+    font-size: 10px;
 }
 
 .emunderline {
