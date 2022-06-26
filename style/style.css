@@ -173,7 +173,7 @@ a:hover {
     top: -300px;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition-duration: 500ms;
+    transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 1000ms;
 }
 
 #popup input {
