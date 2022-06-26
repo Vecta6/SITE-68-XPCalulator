@@ -148,3 +148,55 @@ a:hover {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+
+/* Fenetre popup */
+
+#blur {
+    position: fixed;
+    content: "";
+    z-index: 99;
+    width: 110%;
+    height: 110%;
+    background-color: rgba(53, 53, 53, 0.73);
+}
+
+#popup {
+    position: absolute;
+    z-index: 100;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    padding-top: 10px;
+    top: -300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-duration: 500ms;
+}
+
+#popup input {
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 80px;
+    background-color: rgb(78, 255, 99);
+    width: 200px;
+    height: 50px;
+}
+
+#popup h1 {
+    margin-bottom: 20px;
+}
+
+#popup h1::before,
+#popup h1::after {
+    content: "❗";
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#popup p {
+    margin-top: 70px;
+}
