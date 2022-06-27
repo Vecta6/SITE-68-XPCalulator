@@ -184,6 +184,17 @@ a:hover {
     background-color: rgb(78, 255, 99);
     width: 200px;
     height: 50px;
+    transition-duration: 200ms;
+}
+
+#popup input:hover {
+    box-shadow: 5px 5px 10px rgb(33, 66, 108);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#popup input:active {
+    transform: translateY(10px);
 }
 
 #popup h1 {
