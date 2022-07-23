@@ -14,6 +14,9 @@ function prossess() {
         valuehour = Number(valuesplit[0]);
         valuemin = Number("0." + valuesplit[1]) * 60;
         valuemin = Math.round(valuemin);
+        if (String(valuemin).length == 1) {
+            valuemin = "0" + valuemin;
+        }
         document.getElementById("result").innerHTML = 'Il vous reste encore <em class="emunderline">' + valuehour + "h" + valuemin + '</em> ∓ 5min de jeu pour atteidre votre but';
     }
 }
