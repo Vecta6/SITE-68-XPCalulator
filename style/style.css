@@ -50,8 +50,9 @@ input {
 #CalculButton {
     position: relative;
     color: #fffefe;
-    width: 100px;
-    height: 25px;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
     border: none;
     background: -webkit-linear-gradient(transparent 50%, #04a6cc 50%);
     background-size: 200px 160px;
@@ -68,22 +69,22 @@ input {
 }
 
 #MyXP:invalid {
-    border: 1px red solid;
+    border: 2px red solid;
     border-radius: 5px;
 }
 
 #MyXP:valid {
-    border: 1px green solid;
+    border: 2px green solid;
     border-radius: 5px;
 }
 
 #Goal:invalid {
-    border: 1px red solid;
+    border: 2px red solid;
     border-radius: 5px;
 }
 
 #Goal:valid {
-    border: 1px green solid;
+    border: 2px green solid;
     border-radius: 5px;
 }
 
