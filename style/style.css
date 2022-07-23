@@ -5,6 +5,7 @@
 
 body {
     display: block;
+    color: #fffefe;
 }
 
 #root {
@@ -33,9 +34,11 @@ body {
 }
 
 #main1 {
-    background-color: rgb(240, 248, 255);
+    background-color: #353534;
     width: 50%;
     padding: 10px;
+    border-left: #04a6cc solid 5px;
+    border-right: #04a6cc solid 5px;
 }
 
 input {
@@ -45,23 +48,23 @@ input {
 }
 
 #CalculButton {
-    border-radius: 3px;
+    position: relative;
+    color: #fffefe;
     width: 100px;
     height: 25px;
     border: none;
-    background-color: rgba(33, 66, 108, 0.318);
-    transition-duration: 200ms;
+    background: -webkit-linear-gradient(transparent 50%, #04a6cc 50%);
+    background-size: 200px 160px;
+    transition: 500ms;
+    border-bottom: #04a6cc 1px solid;
 }
 
 #CalculButton:hover {
-    background-color: rgb(240, 248, 255);
-    border-radius: 0;
-    border-top: 2px solid rgba(33, 66, 108);
-    border-bottom: 2px solid rgba(33, 66, 108);
+    background-position: 0 -80px;
 }
 
 #CalculButton:active {
-    transform: translate(0px, 2px);
+    transform: translateY(2px);
 }
 
 #MyXP:invalid {
@@ -85,7 +88,7 @@ input {
 }
 
 #head {
-    border-bottom: 2px solid rgb(33, 66, 108);
+    border-bottom: 2px solid #fffefe;
     margin: 10px;
 }
 
@@ -116,7 +119,7 @@ li {
 
 a {
     text-decoration: none;
-    color: rgb(33, 66, 108);
+    color: #fffefe;
     transition-duration: 100ms;
     margin-left: 10px;
     margin-right: 10px;
@@ -143,7 +146,7 @@ a:hover {
 }
 
 .seperate {
-    border-bottom: 2px rgb(33, 66, 108) solid;
+    border-bottom: 2px #fffefe solid;
     padding-top: 100px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -162,10 +165,11 @@ a:hover {
 }
 
 #popup {
-    position: absolute;
+    display: inline;
+    position: fixed;
     z-index: 100;
     border-radius: 3px;
-    background-color: rgb(255, 255, 255);
+    background-color: #353534;
     width: 500px;
     height: 300px;
     text-align: center;
@@ -174,23 +178,26 @@ a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: cubic-bezier(0.68, -0.55, 0.27, 1.55) 1000ms;
+    border: #04a6cc solid 3px;
 }
 
 #popup input {
+    position: relative;
     border: none;
-    border-radius: 5px;
+    font-size: 30px;
     text-align: center;
     margin-top: 60px;
-    background-color: rgb(78, 255, 99);
     width: 200px;
     height: 50px;
-    transition-duration: 200ms;
+    color: #fffefe;
+    background: -webkit-linear-gradient(transparent 50%, #04a6cc 50%);
+    background-size: 200px 160px;
+    transition: 500ms;
+    border-bottom: #04a6cc 1px solid;
 }
 
 #popup input:hover {
-    box-shadow: 5px 5px 10px rgb(33, 66, 108);
-    transform: scale(1.1);
-    cursor: pointer;
+    background-position: 0 -80px;
 }
 
 #popup input:active {
@@ -198,6 +205,7 @@ a:hover {
 }
 
 #popup h1 {
+    position: relative;
     margin-bottom: 20px;
 }
 
@@ -209,6 +217,7 @@ a:hover {
 }
 
 #popup p {
+    position: relative;
     margin-top: 70px;
     margin-right: 50px;
     margin-left: 50px;
