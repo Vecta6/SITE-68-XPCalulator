@@ -14,8 +14,8 @@
     <div id="popup">
         <center>
             <h1>Attention</h1>
-            <p>Ce site ne sert pas a savoir combien de temps il faut AFK Farm, le AFK farm est strictement interdit sur le serveur</p>
-            <input type="button" value="Compris" onclick="closepopup()">
+            <p>Ce site ne sert pas a savoir combien de temps il faut AFK Farm, le AFK farm est strictement interdit sur le servuer</p>
+            <input type="button" value="✓ Compris ✓" onclick="closepopup()">
         </center>
     </div>
     <div id="root">
@@ -33,15 +33,17 @@
 
             <div id="main">
                 <center>
-                    <form name="Form">
+                    <form>
                         <h5>Entre ton nombre D'XP</h5>
                         <input type="number" id="MyXP" placeholder="ex: 15560" required />
 
                         <h5>Tu voudrait atteindre combien ?</h5>
                         <input type="text" id="Goal" list="l1" placeholder="ex: Commandant" required pattern="[0-9]+">
+
+                        <input id="CalculButton" value=" Calculer..." onclick="prossess()">
                     </form>
 
-                    <input type="button" id="CalculButton" value="Calculer..." onclick="prossess()">
+
 
                     <p id="result"></p>
 
@@ -93,12 +95,14 @@
                         <br> ╚═════╝░╚═╝░░░╚═╝░░░╚══════╝  ░░░░░░  ░╚════╝░░╚════╝░
                     </p>
                 </center>
-                <p>Calculateur par Vecta_#3015</p>
+                <p id="secrettext">Calculateur par Vecta_#3015</p>
             </div>
         </div>
     </div>
 </body>
 
+
+<script src="js/animations.js"></script>
 <script src="js/js.js"></script>
 
 </html>
