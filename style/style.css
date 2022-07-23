@@ -57,7 +57,6 @@ input {
     background-size: 200px 160px;
     transition: 500ms;
     border-bottom: #04a6cc 1px solid;
-    cursor: pointer;
 }
 
 #CalculButton:hover {
@@ -65,7 +64,7 @@ input {
 }
 
 #CalculButton:active {
-    transform: translateY(2px);
+    transform: translateY(3px);
 }
 
 #MyXP:invalid {
