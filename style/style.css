@@ -117,7 +117,7 @@ li {
     font-size: 20px;
 }
 
-a {
+#head a {
     text-decoration: none;
     color: #fffefe;
     transition-duration: 100ms;
@@ -126,10 +126,10 @@ a {
     margin-bottom: 10px;
 }
 
-a:hover {
-    color: brown;
+#head a:hover {
+    color: #04a6cc;
     padding-bottom: 2px;
-    border-bottom: 2px solid brown;
+    border-bottom: 2px solid #04a6cc;
 }
 
 #SITE68 {
