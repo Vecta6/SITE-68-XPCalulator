@@ -57,6 +57,7 @@ input {
     background-size: 200px 160px;
     transition: 500ms;
     border-bottom: #04a6cc 1px solid;
+    cursor: pointer;
 }
 
 #CalculButton:hover {
