@@ -259,3 +259,25 @@ li {
 #discord:hover img {
     height: 60px;
 }
+
+#site {
+    position: fixed;
+    z-index: 90;
+    height: 50px;
+    width: 50px;
+    bottom: 100px;
+    left: 30px;
+}
+
+#site img {
+    position: relative;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+}
+
+#site:hover img {
+    height: 60px;
+}
