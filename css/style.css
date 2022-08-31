@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    color: #FFFFFF;
+}
+
+@keyframes move {
+    from {
+        background-position: 100%;
+    }
+    to {
+        background-position: 100%;
+    }
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+#titre {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ico68 {
+    height: 5%;
+}
+
+.para {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.para img {
+    height: 100px;
+}
+
+.para h2 {
+    width: 70%;
+    top: 50%;
+}
+
+#header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    z-index: 100;
+    overflow: hidden;
+    align-items: center;
+}
+
+#header img {
+    height: 15vh;
+}
+
+#recru {
+    background: none;
+    border: 2px #1f87d6 solid;
+    color: #1f87d6;
+    height: 40px;
+    width: max-content;
+    border-radius: 10px;
+}
+
+#recru:hover {
+    cursor: pointer;
+}
+
+#titre img {
+    height: 35%;
+}
+
+#flech {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 80%;
+    left: 50%;
+    z-index: 100;
+    background: none;
+    border: none;
+    border-right: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    transform: rotate(45deg);
+    animation: levitation 1s infinite alternate;
+    transition-duration: 1s;
+}
+
+#flech:hover {
+    cursor: pointer;
+}
+
+@keyframes levitation {
+    from {
+        transform: translateY(5px) rotate(45deg);
+        transition-duration: 1s;
+    }
+    to {
+        transform: translateY(-5px) rotate(45deg);
+        transition-duration: 1s;
+    }
+}
+
+#menu {
+    position: fixed;
+    display: block;
+    top: 85%;
+    height: max-content;
+    width: max-content;
+}
+
+#play {
+    list-style-type: none;
+    position: fixed;
+    bottom: 10%;
+}
+
+#play h3 {
+    position: absolute;
+    width: max-content;
+    transform: translate(-200px, -5px);
+    transition-duration: 500ms;
+    z-index: -10;
+    color: green;
+    opacity: 0;
+}
+
+#play a:hover+h3 {
+    transform: translate(70px, -5px);
+    color: green;
+    opacity: 1;
+}
+
+#play ion-icon:hover {
+    color: green;
+}
+
+#donate {
+    list-style-type: none;
+    position: fixed;
+    bottom: 20%;
+}
+
+#donate h3 {
+    position: absolute;
+    width: max-content;
+    transform: translate(-200px, -5px);
+    transition-duration: 500ms;
+    z-index: -10;
+    color: #85bb65;
+    opacity: 0;
+}
+
+#donate a:hover+h3 {
+    transform: translate(70px, -5px);
+    color: #85bb65;
+    opacity: 1;
+}
+
+#donate h3 span {
+    color: red;
+}
+
+#donate ion-icon:hover {
+    color: #85bb65;
+}
+
+#discord {
+    list-style-type: none;
+    position: fixed;
+    bottom: 30%;
+}
+
+#discord h3 {
+    position: absolute;
+    width: max-content;
+    transform: translate(-200px, -5px);
+    transition-duration: 500ms;
+    z-index: -10;
+    color: #7289da;
+    opacity: 0;
+}
+
+#discord a:hover+h3 {
+    transform: translate(70px, -5px);
+    color: #7289da;
+    opacity: 1;
+}
+
+#discord ion-icon:hover {
+    color: #7289da;
+}
+
+#menu a {
+    position: absolute;
+}
+
+#menu a ion-icon {
+    color: #1f87d6;
+    height: 50px;
+    width: 50px;
+    transition-duration: 500ms;
+}
+
+#menu a ion-icon:hover {
+    transform: scale(1.3);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(0, 27, 37);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: aliceblue;
+    border-radius: 5px;
+}
